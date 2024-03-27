@@ -21,7 +21,7 @@ public class Program {
 		
 		ProductService ps = new ProductService();
 		
-		double sum = ps.filteredSum(list);
+		double sum = ps.filteredSum(list, p -> p.getName().charAt(0) == 'T');
 		
 		System.out.println("Sum = U$" + String.format("%.2f", sum));
 	}
